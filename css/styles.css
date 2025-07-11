@@ -135,7 +135,8 @@ header .desktop-menu ul li a:hover {
     width: 22px;
   }
   .fullscreen-menu ul li a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   }
 }
 .hero {
