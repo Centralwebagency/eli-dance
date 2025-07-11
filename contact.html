@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli'dance</title>
+    <meta name="description" content="Formulaire de contact d'Elia, professeure de danse à Lyon. Posez vos questions, demandez un devis ou réservez un cours.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Arizonia&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <header>
+           <div class="logo">Eli'danse</div>
+
+       <!-- Menu horizontal pour ordinateur -->
+       <nav class="desktop-menu">
+           <ul>
+               <li><a href="index.html">Accueil</a></li>
+               <li><a href="prestations.html">Prestations et Tarifs</a></li>
+               <li><a href="a-propos.html">À propos</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+       </nav>
+
+       <!-- Menu hamburger pour mobile/tablette -->
+       <div class="hamburger" id="hamburger">
+           <span></span>
+           <span></span>
+            <span></span>
+       </div>
+   </header>
+
+       <!-- Menu plein écran pour mobile/tablette -->
+       <nav class="fullscreen-menu" id="menu">
+       <ul>
+           <li><a href="index.html">Accueil</a></li>
+           <li><a href="prestations.html">Prestations et Tarifs</a></li>
+           <li><a href="a-propos.html">À propos</a></li>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+       </nav>
+
+       <section class="hero">
+       <img src="images/hero.webp" alt="Danseuse en mouvement">
+        <div class="hero-content">
+        <h1>Contactez-moi</h1>
+        <p>Pour toute demande d'informations ou réservations</p>
+        </div>
+        </section>
+        <main>
+            <section class="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>N'hésitez pas à me contacter pour toute demande de prestation ou d'information.</p>
+
+    <form action="https://formspree.io/f/mzzgnjqj" method="POST">
+      <div class="form-grid">
+        <input type="text" name="prenom" placeholder="Prénom" required>
+        <input type="text" name="nom" placeholder="Nom" required>
+
+        <input type="email" name="email" placeholder="Adresse e-mail" required>
+        <input type="tel" name="telephone" placeholder="Numéro de téléphone">
+
+        <select name="type-client" required>
+          <option value="">Vous êtes ?</option>
+          <option value="Particulier">Particulier</option>
+          <option value="Professionnel">Professionnel</option>
+          <option value="Autre">Autre</option>
+        </select>
+
+        <input type="text" name="lieu" placeholder="Ville ou lieu de l'intervention">
+        
+        <select name="prestation">
+          <option value="">Type de prestation souhaitée</option>
+          <option value="Cours particulier">Cours particulier</option>
+          <option value="Stage">Stage</option>
+          <option value="Animation événement">Animation d’événement</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </div>
+
+      <textarea name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+
+      <label class="consentement">
+        <input type="checkbox" name="rgpd" required>
+        J'accepte que mes données soient utilisées pour être recontacté(e).
+      </label>
+
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+        </main>
+
+        <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h3>Eli'Danse</h3>
+    </div>
+
+    <nav class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="prestations.html">Prestations et Tarifs</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/share/1NbGVousbV/?mibextid=wwXlfr"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/e.lia.dance?igsh=MXZwMzNqc3RkN2E0Nw%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@elia_vlr?_t=ZN-8xwCskmwk1m&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> Eli'Danse — Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+       <script src="js/script.js"></script>
+    </body>
+</html>

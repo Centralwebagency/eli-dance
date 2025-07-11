@@ -1,0 +1,234 @@
+@use 'variables';
+
+.tarifs-intro {
+  background-color: variables.$background-color;
+  padding: 3rem 2rem;
+  text-align: center;
+
+  p {
+    margin-top: 0.5rem;
+    color: variables.$text-dark;
+    font-size: 1.125rem;
+    font-family: variables.$font-main;
+  }
+}
+
+.prestations {
+  background-color: #fff;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .prestation {
+    background-color: variables.$background-color;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+
+    &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  @media (hover: none) and (pointer: coarse) {
+    &:active {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+    h2 {
+      font-size: 1.6rem;
+      color: variables.$primary-color;
+      font-family: variables.$font-subtitle-h2;
+    }
+
+    p {
+      font-size: 1rem;
+      color: variables.$text-dark;
+      font-family: variables.$font-main;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .prix {
+      font-weight: bold;
+      margin-top: 1rem;
+      color: variables.$accent-color;
+    }
+  }
+}
+
+// Section cours
+.cours {
+  background-color: variables.$background-color;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    color: variables.$primary-color;
+    font-family: variables.$font-subtitle-h2;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    font-family: variables.$font-main;
+    color: variables.$text-dark;
+    margin-bottom: 3rem;
+  }
+
+  .cours-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .cours-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    h3 {
+      font-size: 1.4rem;
+      color: variables.$accent-color;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: variables.$text-dark;
+      margin-bottom: 1rem;
+    }
+
+    .prix {
+      display: block;
+      font-weight: bold;
+      color: variables.$primary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    a.devis {
+      font-size: 0.95rem;
+      color: variables.$accent-color;
+      text-decoration: none;
+      transition: color variables.$transition;
+
+      &:hover {
+        color: darken(variables.$accent-color, 10%);
+      }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+
+
+@media (max-width: variables.$tablet) {
+  .tarifs-intro {
+    padding: 2.5rem 1.5rem;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .prestations {
+    padding: 3rem 1.5rem;
+
+    .prestation {
+      padding: 1.5rem;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .prix {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .cours {
+    padding: 3rem 1.5rem;
+
+    .cours-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: variables.$mobile) {
+  .tarifs-intro {
+    padding: 2rem 1rem;
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .prestations {
+    padding: 2rem 1rem;
+
+    .prestation {
+      padding: 1.2rem;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .prix {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  .cours {
+    padding: 2rem 1rem;
+
+    .cours-grid {
+      grid-template-columns: 1fr;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .cours-card {
+      padding: 1.5rem;
+    }
+  }
+}
+

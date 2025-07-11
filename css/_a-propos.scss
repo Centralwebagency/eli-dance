@@ -1,0 +1,172 @@
+@use 'variables';
+
+.a-propos {
+  background-color: variables.$background-color;
+
+  // Section Qui suis-je
+  .qui-suis-je {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      max-width: 1100px;
+      background-color: rgba(255, 249, 248, 0.95);
+      padding: 3rem 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover,
+      &:focus-within {
+        transform: scale(1.01);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 280px;
+
+      h2 {
+        font-size: 2.5rem;
+        color: variables.$primary-color;
+        font-family: variables.$font-subtitle-h2;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: variables.$text-dark;
+        font-family: variables.$font-main;
+        line-height: 1.8;
+      }
+    }
+
+    .image {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  // Section Passion
+  .passion {
+    background-color: variables.$background-color;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      max-width: 850px;
+      background-color: rgba(255, 249, 248, 0.95);
+      padding: 3rem 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover,
+      &:focus-within {
+        transform: scale(1.02);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        color: variables.$primary-color;
+        font-family: variables.$font-subtitle-h2;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: variables.$text-dark;
+        font-family: variables.$font-main;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+
+// ========== RESPONSIVE TABLET ==========
+
+@media (max-width: variables.$tablet) {
+  .a-propos {
+    .qui-suis-je,
+    .passion {
+      padding: 3rem 1.5rem;
+    }
+
+    .qui-suis-je .container,
+    .passion .container {
+      padding: 2rem 1.5rem;
+    }
+
+    .qui-suis-je .text h2,
+    .passion h2 {
+      font-size: 2rem;
+    }
+
+    .qui-suis-je .text p,
+    .passion p {
+      font-size: 1rem;
+    }
+
+    .qui-suis-je .content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .qui-suis-je .text {
+      order: 2;
+    }
+
+    .qui-suis-je .image {
+      order: 1;
+    }
+  }
+}
+
+// ========== RESPONSIVE MOBILE ==========
+
+@media (max-width: variables.$mobile) {
+  .a-propos {
+    .qui-suis-je,
+    .passion {
+      padding: 2rem 1rem;
+    }
+
+    .qui-suis-je .container,
+    .passion .container {
+      padding: 1.5rem 1rem;
+    }
+
+    .qui-suis-je .text h2,
+    .passion h2 {
+      font-size: 1.8rem;
+    }
+
+    .qui-suis-je .text p,
+    .passion p {
+      font-size: 0.95rem;
+    }
+  }
+}
+
+
