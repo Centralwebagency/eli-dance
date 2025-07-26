@@ -122,7 +122,7 @@ body {
 
     img {
       width: 100%;
-      height: auto;
+      height: 400px;
       object-fit: cover;
       cursor: pointer;
       border-radius: 10px;
@@ -411,8 +411,18 @@ body {
     }
   }
 
+  .gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+    padding: 0 1rem !important;
+
+    img {
+      height: 250px !important;
+    }
+  }
+
   .gallery h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .timeline {

@@ -12,7 +12,7 @@ header {
 }
 header .logo {
   font-size: 1.5rem;
-  color: #D85C8A;
+  color: rgb(84, 11, 11);
   font-weight: bold;
   text-decoration: none;
 }
@@ -220,7 +220,7 @@ header .desktop-menu ul li a:hover {
 }
 .button:hover,
 .btn:hover {
-  background-color: #ce336c;
+  background-color: rgb(206.1534653465, 50.8465346535, 108.4603960396);
   transform: scale(1.05);
 }
 
@@ -388,7 +388,7 @@ header .desktop-menu ul li a:hover {
 .prestations .prestation h2 {
   font-size: 1.6rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 .prestations .prestation p {
   font-size: 1rem;
@@ -411,7 +411,7 @@ header .desktop-menu ul li a:hover {
 .cours h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 1rem;
 }
 .cours p {
@@ -455,7 +455,7 @@ header .desktop-menu ul li a:hover {
   transition: color 0.3s ease-in-out;
 }
 .cours .cours-card a.devis:hover {
-  color: #ce336c;
+  color: rgb(206.1534653465, 50.8465346535, 108.4603960396);
 }
 .cours .cours-card:hover {
   transform: translateY(-5px);
@@ -540,7 +540,7 @@ header .desktop-menu ul li a:hover {
 .contact h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 1rem;
 }
 .contact p {
@@ -655,7 +655,7 @@ header .desktop-menu ul li a:hover {
 .a-propos .qui-suis-je .text h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 1.5rem;
 }
 .a-propos .qui-suis-je .text p {
@@ -697,7 +697,7 @@ header .desktop-menu ul li a:hover {
 .a-propos .passion .container h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 2rem;
 }
 .a-propos .passion .container p {
@@ -805,7 +805,7 @@ body {
   font-size: 2.5rem;
   color: #6C4A73;
   margin-bottom: 1.5rem;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 .bio p {
   font-size: 1.125rem;
@@ -837,7 +837,7 @@ body {
 .cta-box h2 {
   font-size: 2rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 1rem;
 }
 .cta-box p {
@@ -855,7 +855,7 @@ body {
 .gallery h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 2rem;
 }
 .gallery .gallery-grid {
@@ -867,7 +867,7 @@ body {
 }
 .gallery .gallery-grid img {
   width: 100%;
-  height: auto;
+  height: 400px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 10px;
@@ -886,7 +886,7 @@ body {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
 }
 .timeline .timeline-steps {
   max-width: 700px;
@@ -939,7 +939,7 @@ body {
 .testimonials h2 {
   font-size: 2.5rem;
   color: #6C4A73;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   margin-bottom: 3rem;
 }
 .testimonials .testimonial-grid {
@@ -982,7 +982,7 @@ body {
 .socials h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  font-family: "Arizonia", cursive;
+  font-family: "Permanent Marker", cursive;
   color: #6C4A73;
 }
 .socials .social-links {
@@ -1099,8 +1099,16 @@ body {
   .cta-box p {
     font-size: 0.95rem;
   }
+  .gallery .gallery-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+    padding: 0 1rem !important;
+  }
+  .gallery .gallery-grid img {
+    height: 250px !important;
+  }
   .gallery h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
   .timeline {
     padding: 2rem 1rem;
