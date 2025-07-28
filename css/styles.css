@@ -12,7 +12,7 @@ header {
 }
 header .logo {
   font-size: 1.5rem;
-  color: rgb(84, 11, 11);
+  color: rgb(170, 24, 24);
   font-weight: bold;
   text-decoration: none;
 }
@@ -46,7 +46,7 @@ header .desktop-menu ul li a {
   transition: color 0.3s ease-in-out;
 }
 header .desktop-menu ul li a:hover {
-  color: #D85C8A;
+  color: #715169;
 }
 
 .fullscreen-menu {
@@ -83,7 +83,7 @@ header .desktop-menu ul li a:hover {
   transition: color 0.3s ease-in-out;
 }
 .fullscreen-menu ul li a:hover {
-  color: #D85C8A;
+  color: #715169;
 }
 .fullscreen-menu.active {
   transform: translateY(0);
@@ -210,7 +210,7 @@ header .desktop-menu ul li a:hover {
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #D85C8A;
+  background-color: #715169;
   color: #fff;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
@@ -221,7 +221,7 @@ header .desktop-menu ul li a:hover {
 }
 .button:hover,
 .btn:hover {
-  background-color: rgb(206.1534653465, 50.8465346535, 108.4603960396);
+  background-color: rgb(83.293814433, 59.706185567, 77.3969072165);
   transform: scale(1.05);
 }
 
@@ -285,7 +285,7 @@ header .desktop-menu ul li a:hover {
   transition: color 0.3s ease;
 }
 .footer .footer-links a:hover {
-  color: #D85C8A;
+  color: #715169;
 }
 .footer .footer-socials {
   display: flex;
@@ -297,7 +297,7 @@ header .desktop-menu ul li a:hover {
   transition: color 0.3s ease;
 }
 .footer .footer-socials a:hover {
-  color: #D85C8A;
+  color: #715169;
 }
 .footer .footer-copy {
   font-size: 0.9rem;
@@ -401,7 +401,7 @@ header .desktop-menu ul li a:hover {
 .prestations .prestation .prix {
   font-weight: bold;
   margin-top: 1rem;
-  color: #D85C8A;
+  color: #715169;
 }
 
 .cours {
@@ -435,7 +435,7 @@ header .desktop-menu ul li a:hover {
 }
 .cours .cours-card h3 {
   font-size: 1.4rem;
-  color: #D85C8A;
+  color: #715169;
   margin-bottom: 0.8rem;
 }
 .cours .cours-card p {
@@ -451,12 +451,12 @@ header .desktop-menu ul li a:hover {
 }
 .cours .cours-card a.devis {
   font-size: 0.95rem;
-  color: #D85C8A;
+  color: #715169;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 .cours .cours-card a.devis:hover {
-  color: rgb(206.1534653465, 50.8465346535, 108.4603960396);
+  color: rgb(83.293814433, 59.706185567, 77.3969072165);
 }
 .cours .cours-card:hover {
   transform: translateY(-5px);
@@ -919,7 +919,7 @@ body {
 }
 .timeline .timeline-steps .step .year {
   font-weight: bold;
-  color: #D85C8A;
+  color: #715169;
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
@@ -1005,7 +1005,7 @@ body {
 }
 .socials .social-links .social-icon:hover {
   transform: scale(1.1);
-  background-color: #D85C8A;
+  background-color: #715169;
   color: #fff;
 }
 .socials .social-links .social-icon.facebook {
